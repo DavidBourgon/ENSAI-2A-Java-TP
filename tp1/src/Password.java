@@ -129,8 +129,6 @@ public class Password {
     public static String generatePassword(int nbCar) {
 
         
-
-        return null;
     }
 
     public static void main(String[] args) {
