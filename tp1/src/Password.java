@@ -104,10 +104,14 @@ public class Password {
      *         true if the password is strong, false otherwise
      */
     public static HashMap<String, Boolean> checkPasswordsList(ArrayList<String> passwords) {
-
-        // Code here
-
-        return null;
+        HashMap<String, Boolean> dico = new HashMap<>();
+        String mdp = "init";
+        int len = passwords.size();
+        for (int i=0; i < len;i++){
+            mdp = passwords.get(i);
+            dico.put(mdp,isStrongPassword(mdp));
+        }
+        return dico;
     }
 
     /**
@@ -124,7 +128,7 @@ public class Password {
      */
     public static String generatePassword(int nbCar) {
 
-        // Code here
+        
 
         return null;
     }
